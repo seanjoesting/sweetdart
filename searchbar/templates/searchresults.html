@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<p>You searched for: <strong>{{ query }}</strong></p>
+<p>Results: </p>
+    {% for product in results.products %}
+        <h1><a href="{{product.url }}">{{product.name}}</a></h1>
+        <img src="{{product.image}}">
+        <h3>Price: {{product.salePrice }} </h3>
+        <h3>Description: {{product.description }} </h3>
+    {% endfor %}
+
+{% endblock %}

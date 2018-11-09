@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block navhome %}active{% endblock %}
+{% block body %}
+
+
+      <section class="site-hero overlay" data-stellar-background-ratio="0.5">
+
+        <div class="container">
+          <div class="row align-items-center site-hero-inner justify-content-center">
+            <div class="col-md-8 text-center">
+
+              <div class="mb-5 element-animate">
+
+                <h1></h1>
+
+              </div>
+
+              <form class="form-inline element-animate" type="get" action="/search/" id="search-form">
+                <label class="sr-only">SweetSearch</label>
+                <input type="text" name ="q" class="form-control form-control-block search-input" id="autocomplete" placeholder="Find something extra sweet" onFocus="geolocate()">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    <!-- END section -->
+
+    <!-- END section -->
+    
+    <section class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pr-5">
+            
+            <h2 class="mb-3">HOT DEALS!</h2>
+            <p class="mb-5">Some of the hottest deals across the web right at your fingertips</p>
+            
+            <div class="mb-3">
+              <a href="#" class="btn btn-primary custom-prev mr-2 mb-2"><span class="ion-android-arrow-back"></span></a> 
+              <a href="#" class="btn btn-primary custom-next mr-2 mb-2"><span class="ion-android-arrow-forward"></span></a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12 slider-wrap">
+                <div class="owl-carousel owl-theme no-nav js-carousel-1">
+                  
+                  <a href="https://www.amazon.com/All-new-Echo-Dot-3rd-Gen/dp/B0792R1RSN/ref=redir_mobile_desktop?_encoding=UTF8&ref_=ods_gw_ha_dt_dc_092318" class="img-bg" style="background-image: url('{% static 'images/amazonecho.jpg' %}')">
+                    <div class="text">
+                      <span class="icon"></span>
+
+                      <h2>Amazon Echo</h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.amazon.com/Amazon-Echo-Show-Alexa-Enabled-White/dp/B010CEHQTG/ref=br_msw_pdt-2?_encoding=UTF8&smid=ATVPDKIKX0DER&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=&pf_rd_r=GK4XYJJ5FQSWBMMKC37G&pf_rd_t=36701&pf_rd_p=048a9687-f6fd-4d14-aba1-7326101c1bcc&pf_rd_i=desktop" class="img-bg" style="background-image: url('{% static 'images/echoshow.jpg' %}')">
+                    <div class="text">
+                      <span class="icon"></span>
+                      <h2>Echo Show</h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.amazon.com/BENGOO-Controller-Cancelling-Headphones-Camouflage/dp/B01MA5XZSG/ref=gbps_img_s-4_6000_dac934b8?smid=A1BCXRJQ9212UU&pf_rd_p=7cb72b8a-f82b-4596-80d7-b396957f6000&pf_rd_s=slot-4&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=7TEA6Q26VFAAMNG5GNER" class="img-bg last" style="background-image: url('{% static 'images/headphones.jpg' %}')">
+                    <div class="text">
+                      <span class="icon"></span>
+                      <h2>BENGOO Stereo Gaming Headset</h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.amazon.com/Activated-Charcoal-Whitening-Natural-Sensitivity/dp/B07DH582YF/ref=gbps_img_s-4_6000_75a1c80a?smid=A3QRDHUVXFIUXF&pf_rd_p=7cb72b8a-f82b-4596-80d7-b396957f6000&pf_rd_s=slot-4&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=QZCDE0SY4NT91HHQ8DZ1" class="img-bg" style="background-image: url('{% static 'images/teeth.jpg' %}')">
+                    <div class="text">
+                      <span class="icon"></span>
+                      <h2>Activated Charcoal Teeth Whitening Powder</h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="img-bg" style="background-image:">
+                    <div class="text">
+                      <span></span>
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="img-bg last" style="">
+                    <div class="text">
+                      <span></span>
+                      <h2></h2>
+                      <p>Visit This Place</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="img-bg" style="">
+                    <div class="text">
+                      <span class="icon"></span>
+                      <h2></h2>
+                      <p></p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="img-bg" style="">
+                    <div class="text">
+                      <span></span>
+                      <h2></h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="img-bg last" style="">
+                    <div class="text">
+                      <span class="icon ion-ios-location"></span>
+                      <h2></h2>
+                      <p>Check it out!</p>
+                    </div>
+                  </a>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+{% endblock %}

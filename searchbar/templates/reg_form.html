@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<section class ="register overlay" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <h1>Register</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+        <div class="panel-footer">
+                        Already have an account? <a href="{% url 'searchbar:loguser' %}">Click here</a> to log in.
+                    </div>
+    </div>
+    </section>
+{% endblock %}
